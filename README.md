@@ -49,7 +49,7 @@ Before running the project, make sure you have the following done:
 
 3. Install dependencies:
 
-   install the necessary dependencies in both client and server folders
+   install the necessary dependencies in both client and server folders.
 
    ```bash
    npm install
@@ -70,5 +70,3 @@ Before running the project, make sure you have the following done:
 ![Screenshot](./client/public/screenshots/5.png)
 ![Screenshot](./client/public/screenshots/6.png)
 ![Screenshot](./client/public/screenshots/7.png)
-
-## That's it 🙌
