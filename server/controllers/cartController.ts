@@ -14,13 +14,15 @@ export const showCart = catchAsync(
     // 1) Get user id from request
     const userId = req.user._id;
 
-    let cart: ICart | undefined | null;
-    if (cache.has('cart')) {
-      cart = cache.get('cart');
-    } else {
-      cart = await Cart.findOne({ user: userId });
-      cache.set('cart', cart?.toObject());
-    }
+    // let cart: ICart | undefined | null;
+    // if (cache.has('cart')) {
+    //   cart = cache.get('cart');
+    // } else {
+    //   cart = await Cart.findOne({ user: userId });
+    //   cache.set('cart', cart?.toObject());
+    // }
+
+    const cart = await Cart.findOne({ user: userId });
 
     if (!cart || !cart?.items.length) {
       return next(new AppError('There are no items in your cart', 404));
@@ -203,7 +205,7 @@ const updateCartQuantity = async (
   await calculateTotals(cart);
   await cart.save();
 
-  cache.set('cart', cart.toObject());
+  // cache.set('cart', cart.toObject());
 
   res.status(200).json({
     status: 'success',
@@ -244,11 +246,11 @@ const updateCart = async (
   await calculateTotals(cart);
   await cart.save();
 
-  const cachedCart = await cart.populate({
-    path: 'items.product',
-    select: 'title price category.name images',
-  });
-  cache.set('cart', cachedCart.toObject());
+  // const cachedCart = await cart.populate({
+  //   path: 'items.product',
+  //   select: 'title price category.name images',
+  // });
+  // cache.set('cart', cachedCart.toObject());
 
   return cart;
 };
