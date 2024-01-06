@@ -19,7 +19,7 @@ export default function Navbar() {
         <NavLinks />
       </div>
 
-      {isLoading && <Skeleton className="h-10 w-72" />}
+      {isLoading && <Skeleton className="w-32 h-10 md:w-72" />}
       {!isLoading && isAuthenticated && <AuthenticatedNav />}
       {!isLoading && !isAuthenticated && <UnauthenticatedNav />}
     </div>
