@@ -38,7 +38,6 @@ const queryClient = new QueryClient({
 });
 
 export default function App() {
-  console.log(SERVER_DOMAIN)
   return (
     <QueryClientProvider client={queryClient}>
       <ReactQueryDevtools initialIsOpen={false} />
