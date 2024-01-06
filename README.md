@@ -4,10 +4,10 @@ Ecocart, a full-stack e-commerce application built using the MERN stack [Typescr
 
 ## Table of contents
 
-- **[Features](#features)**
-- **[Installation](#installation)**
-- **[Run Locally](#run-locally)**
-- **[Screenshots](#screenshots)**
+- [Features](#features)
+- [Installation](#installation)
+- [Run Locally](#run-locally)
+- [Screenshots](#screenshots)
 
 ## Features
 
