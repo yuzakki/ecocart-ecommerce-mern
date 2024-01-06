@@ -49,7 +49,7 @@ Before running the project, make sure you have the following done:
 
 3. Install dependencies:
 
-   install the necessary dependencies in both client and server folders
+   install the necessary dependencies in both client and server folders.
 
    ```bash
    npm install
