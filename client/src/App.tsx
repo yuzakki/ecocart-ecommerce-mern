@@ -17,6 +17,7 @@ import ShowOrdersList from '@features/orders/components/show-orders-list';
 // Imports: Pages
 import { PageNotFound } from '@components/not-found-ui';
 import ConfirmOrder from '@features/orders/components/confirm-order';
+import { SERVER_DOMAIN } from '@utils/constants';
 
 const HomePage = lazy(() => import('@pages/home'));
 const FeaturedPage = lazy(() => import('@pages/featured'));
@@ -37,6 +38,7 @@ const queryClient = new QueryClient({
 });
 
 export default function App() {
+  console.log(SERVER_DOMAIN)
   return (
     <QueryClientProvider client={queryClient}>
       <ReactQueryDevtools initialIsOpen={false} />
