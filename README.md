@@ -70,5 +70,3 @@ Before running the project, make sure you have the following done:
 ![Screenshot](./client/public/screenshots/5.png)
 ![Screenshot](./client/public/screenshots/6.png)
 ![Screenshot](./client/public/screenshots/7.png)
-
-## That's it 🙌
