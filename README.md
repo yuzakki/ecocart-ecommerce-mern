@@ -31,7 +31,7 @@ Before running the project, make sure you have the following done:
 
 - **You have Node.js installed (v18 or higher)**
 
-- **Create a .env file in the root directory and add the necessary variable from .env.example in client and server**
+- **Create a .env file in the root directory and add the necessary variable in .env.example in both client and server**
 
 ### Run locally
 
